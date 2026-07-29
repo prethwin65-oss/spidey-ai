@@ -1,50 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
+
+<title>Spidey-AI</title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🕷️ Spidey-AI</title>
-<meta name="description" content="Your Friendly Neighbourhood AI Search Engine">
-<meta name="robots" content="index, follow">
-<meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE">
-<link rel="icon" href="favicon.jpg">
-<style>
-body{margin:0;background:#000;color:#fff;font-family:Arial,sans-serif;display:flex;justify-content:center;align-items:center;min-height:100vh}
-.container{width:min(900px,95%);background:#111;border:2px solid #c00;border-radius:18px;padding:20px;box-shadow:0 0 20px #c00}
-h1{text-align:center;color:#ff3030}
-#chat{height:360px;background:#000;border:1px solid #444;border-radius:12px;padding:12px;overflow:auto;margin-bottom:15px}
-textarea{width:100%;height:90px;background:#1b1b1b;color:#fff;border:1px solid #555;border-radius:10px;padding:10px;resize:none}
-.actions{display:flex;justify-content:flex-end;margin-top:10px}
-button{background:#c00;color:#fff;border:none;padding:12px 20px;border-radius:10px;cursor:pointer}
-button:hover{background:#f00}
-</style>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
+
 <body>
-<div class="container">
+
+
+<div class="app">
+
+
+<header>
+
 <h1>🕷️ Spidey-AI</h1>
-<p style="text-align:center">Your Friendly Neighbourhood AI Search Engine</p>
 
-<div id="chat">
-<p><b>Spidey-AI:</b> Hello! How can I help you today?</p>
+<button onclick="toggleTheme()">🌙</button>
+
+</header>
+
+
+
+<div class="status">
+
+🟢 Spidey-AI Online
+
 </div>
 
-<textarea id="message" placeholder="Message Spidey-AI..."></textarea>
 
-<div class="actions">
-<button onclick="sendMessage()">🔍 Search</button>
-</div>
+
+
+<div id="chat-box">
+
+
+<div class="message ai">
+
+Hello 👋  
+I am Spidey-AI.  
+Ask anything, use voice, upload files or create images.
+
 </div>
 
-<script>
-function sendMessage(){
- const input=document.getElementById("message");
- const chat=document.getElementById("chat");
- if(input.value.trim()==="") return;
- chat.innerHTML += "<p><b>You:</b> "+input.value+"</p>";
- chat.innerHTML += "<p><b>Spidey-AI:</b> This is a demo interface. Connect it to your Python backend to get AI responses.</p>";
- input.value="";
- chat.scrollTop=chat.scrollHeight;
-}
-</script>
+
+</div>
+
+
+
+
+
+<div class="features">
+
+
+<button onclick="startVoice()">
+🎤 Voice
+</button>
+
+
+<button onclick="createImage()">
+🖼️ Create Image
+</button>
+
+
+<button onclick="uploadFile()">
+📎 File
+</button>
+
+
+<button onclick="searchWeb()">
+🔍 Search
+</button>
+
+
+</div>
+
+
+
+
+
+
+<div class="input-area">
+
+
+<input 
+id="user-input"
+type="text"
+placeholder="Message Spidey-AI..."
+>
+
+
+
+<button onclick="sendMessage()">
+
+➤
+
+</button>
+
+
+</div>
+
+
+
+<input 
+type="file"
+id="file-upload"
+hidden
+>
+
+
+
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+
 </body>
+
 </html>
