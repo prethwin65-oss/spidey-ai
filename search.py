@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Spidy-AI Backend is Running!"
+    return "Spidey-AI Backend is Running!"
 
 @app.route("/chat", methods=["POST"])
 def chat():
