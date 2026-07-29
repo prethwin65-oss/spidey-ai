@@ -21,7 +21,7 @@ Spidey-AI is an AI-powered search engine and assistant built using:
 
 ## Website
 
-https://prethwin65-oss.github.io/spidy-ai/
+https://prethwin65-oss.github.io/spidey-ai/
 
 ## Author
 
