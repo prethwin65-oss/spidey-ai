@@ -5,7 +5,7 @@ def get_ai_response(message):
     msg = message.lower()
 
     if "hello" in msg or "hi" in msg:
-        return "Hello! I am Spidy-AI. How can I help you?"
+        return "Hello! I am Spidey-AI. How can I help you?"
 
     elif "how are you" in msg:
         return "I'm doing great! Thanks for asking."
@@ -17,7 +17,7 @@ def get_ai_response(message):
         return "Today's date: " + str(datetime.date.today())
 
     elif "who are you" in msg:
-        return "I am Spidy-AI, your intelligent AI assistant."
+        return "I am Spidey-AI, your intelligent AI assistant."
 
     elif "bye" in msg:
         return "Goodbye! Have a nice day."
