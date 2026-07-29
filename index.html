@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
 
-<title>Spidey-AI</title>
+<meta charset="UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>🕷️ Spidey-AI</title>
+
+<link rel="icon" type="image/jpeg" href="favicon.jpg">
+
+<meta name="google-site-verification" content="YOUR_VERIFICATION_CODE_HERE">
 
 <link rel="stylesheet" href="style.css">
 
@@ -17,21 +24,37 @@
 <div class="app">
 
 
-<header>
+<header class="top-bar">
 
-<h1>🕷️ Spidey-AI</h1>
+<div class="logo">
+🕷️ Spidey-AI
+</div>
 
-<button onclick="toggleTheme()">🌙</button>
+<div class="top-buttons">
+
+<button onclick="toggleTheme()">
+🌙
+</button>
+
+<button onclick="openSettings()">
+⚙️
+</button>
+
+</div>
 
 </header>
 
 
 
-<div class="status">
 
-🟢 Spidey-AI Online
+<div class="ai-status">
+
+<span>🟢</span>
+Spidey-AI Online
 
 </div>
+
+
 
 
 
@@ -41,9 +64,13 @@
 
 <div class="message ai">
 
-Hello 👋  
-I am Spidey-AI.  
-Ask anything, use voice, upload files or create images.
+Hello 👋
+
+I am Spidey-AI.
+
+Your intelligent assistant.
+
+Ask questions, search information, use voice or create images.
 
 </div>
 
@@ -54,26 +81,36 @@ Ask anything, use voice, upload files or create images.
 
 
 
-<div class="features">
+
+
+<div class="quick-tools">
 
 
 <button onclick="startVoice()">
-🎤 Voice
+🎤
+<br>
+Voice
 </button>
 
 
 <button onclick="createImage()">
-🖼️ Create Image
-</button>
-
-
-<button onclick="uploadFile()">
-📎 File
+🖼️
+<br>
+Image
 </button>
 
 
 <button onclick="searchWeb()">
-🔍 Search
+🔍
+<br>
+Search
+</button>
+
+
+<button onclick="uploadFile()">
+📎
+<br>
+Files
 </button>
 
 
@@ -84,25 +121,43 @@ Ask anything, use voice, upload files or create images.
 
 
 
-<div class="input-area">
+
+
+<div class="input-box">
 
 
 <input 
 id="user-input"
 type="text"
-placeholder="Message Spidey-AI..."
+placeholder="Ask Spidey-AI anything..."
+autocomplete="off"
 >
 
 
-
 <button onclick="sendMessage()">
-
 ➤
-
 </button>
 
 
 </div>
+
+
+
+
+
+
+
+<div class="footer">
+
+Powered by 🕷️ Spidey-AI
+
+</div>
+
+
+
+</div>
+
+
 
 
 
@@ -112,10 +167,6 @@ id="file-upload"
 hidden
 >
 
-
-
-
-</div>
 
 
 
