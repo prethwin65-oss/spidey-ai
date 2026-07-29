@@ -32,13 +32,13 @@ async function sendMessage() {
         let data = await response.json();
 
         chat.innerHTML += `
-            <p><b>Spidy-AI:</b> ${data.reply}</p>
+            <p><b>Spidey-AI:</b> ${data.reply}</p>
         `;
 
     } catch (error) {
 
         chat.innerHTML += `
-            <p><b>Spidy-AI:</b> Unable to connect to backend.</p>
+            <p><b>Spidey-AI:</b> Unable to connect to backend.</p>
         `;
 
     }
